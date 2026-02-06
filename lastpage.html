@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="css/flower.css" />
+</head>
+
+<body>
+
+  <div id="thankyou"><b>Thank you for being my bebitaaa❤️❤️❤️</b></div>
+
+  <div class="love-row">
+    <span class="big-heart">❤️</span>
+    <span class="big-arrow">➡️</span>
+
+    <img id="gf-pic" src="her.jpeg" alt="My Girl ❤️" />
+
+    <span class="big-arrow">⬅️</span>
+    <span class="big-heart">❤️</span>
+  </div>
+
+  <!-- Optional cute message -->
+  <div id="rizz"><b> i choose you today, tomorrow, and always 🌸</b></div>
+
+  <button class="button" onclick="alert('MWAAHHHHHH💖')">
+    Click me 😌
+  </button>
+
+  <!-- Falling petals -->
+  <script>
+    for (let i = 0; i < 35; i++) {
+      const petal = document.createElement("div");
+      petal.classList.add("petal");
+      petal.style.left = Math.random() * 100 + "vw";
+      petal.style.animationDuration = 6 + Math.random() * 6 + "s";
+      petal.style.animationDelay = Math.random() * 5 + "s";
+      petal.style.transform = `scale(${0.5 + Math.random()})`;
+      document.body.appendChild(petal);
+    }
+  </script>
+
+</body>
+
+</html>
